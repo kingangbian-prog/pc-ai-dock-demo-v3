@@ -1,6 +1,6 @@
-# Demo 3 检查点
+# Demo 3 验证记录
 
-基线：v2 cca3ea28c60766bb321b78a371366f87ebaa4ae0。独立目录 pc-ai-dock-v3，运行 http://127.0.0.1:4175/ 。未修改v2，未创建/推送新远端仓库。
+基线：v2 cca3ea28c60766bb321b78a371366f87ebaa4ae0。独立目录 pc-ai-dock-v3，运行 http://127.0.0.1:4175/ 。未修改v2。独立仓库 kingangbian-prog/pc-ai-dock-demo-v3。
 
 ## 已完成
 
@@ -27,12 +27,15 @@
 - 新长标题任务异步完成后，挂架输入的DOM标记、文字和焦点均未丢失。
 - 未发现应用控制台错误。
 
-## 尚需完成
+## 最终视觉与验证边界
 
-1. 最终视觉QA：对照 generated_images/exec-6d88176f-7545-4748-94ae-13217a3ffdcb.png 的材质/布局参考与最新截图用view_image检查；概念中的百分比/虚构文案不采用，保留实际任务与原壁纸。
-2. 补齐最终桌面/胶囊/窄屏/空状态截图；样式偏好浏览器刷新、指针高光与模式翻转抽查。
-3. Reduced motion 尚未做浏览器强制媒体偏好验证（现工具仅viewport/visibility接口）；已有控制器测试及CSS分支。
-4. 独立创建 kingangbian-prog/pc-ai-dock-demo-v3（名称已查不存在），GitHub Pages发布，核验commit/built/匿名资源及线上交互。
-5. 生成独立版本包，完善最终QA。纯鼠标move/hover无公开接口，不能把点击/键盘冒称为完整hover测试；已实测真实卡片点击/删除及原生横向滚动。
+- 已查看1280×720桌面和390×844截图，玻璃层次、亮边、绳与金属夹、倾斜卡片符合参考方向。
+- 白色窗口下增加玻璃卡底色与字号，确保对比。
+- 保留原壁纸及实际模拟任务文案，未采用概念图的虚构百分比。
+- 窄屏支持横向浏览，Dock保持单行。
+- 样式偏好刷新、指针高光、模式翻转实际检查通过。
+- Reduced motion有CSS及控制器覆盖，未强制浏览器媒体偏好测试；未验证其他浏览器。
+- 工具无纯鼠标move/hover接口，真实点击、删除及原生滚动已验证，不声称完整hover验证。
+- Liquid Glass是CSS视觉实现，任务、通知、文档均为模拟。
 
-证据：v3-evidence/checkpoint-desktop.png、v3-evidence/mobile-hanger.png。所有能力为本地模拟，无真实剪贴板、系统通知或外部Agent集成。
+截图：v3-evidence/final-desktop.png、final-mobile.png、capsule-desktop.png、contrast-over-window.png。
