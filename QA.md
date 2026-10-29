@@ -39,3 +39,6 @@
 - Liquid Glass是CSS视觉实现，任务、通知、文档均为模拟。
 
 截图：v3-evidence/final-desktop.png、final-mobile.png、capsule-desktop.png、contrast-over-window.png。
+
+## Ideas 整组折叠修订
+原先标题导航、窄箭头折叠；改为整行按钮折叠，另设主会话入口。64项测试通过。实际IAB验证鼠标切换、Enter/Space、AI屏内容在折叠/刷新后保留、390×844四子项和主会话入口正常，控制台无错误。折叠沿用v3独立持久状态，不影响Goals/Connect。此次先本地，尚未发布。
