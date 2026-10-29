@@ -15,3 +15,5 @@
 .hanger-scroll{position:relative}.hanger-clip{top:calc(var(--rope-drop,0px) - 28px)}
 .hanger-card-tilt{background:linear-gradient(145deg,#c6e5ff24,#14385445),#1534513b}.hanger-step{color:#f1f7ff}.hanger-feedback{color:#d3e3f2}.ai-dock .command-form>input{color:#254b6f}.ai-dock .command-form>input::placeholder{color:#5a7591}.ai-dock .selector-selected{color:#355a7a}
 .hanger-card h2{overflow-wrap:anywhere}
+/* Preserve readable contrast even when a white document window sits beneath the glass. */
+.hanger-card-tilt{background:linear-gradient(145deg,#c6e5ff14,#14385420),#153b5bbf}.hanger-card h2{font-size:15px;min-height:45px}.hanger-agent{font-size:11px}.hanger-step{font-size:11.5px;min-height:40px}.hanger-status .status{font-size:10px}.hanger-open{font-size:11px}.hanger-input{font-size:11px}.hanger-feedback{font-size:9px;color:#d4e6f5}
